@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		6DE2FCCE279AC62B00730825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2FCCD279AC62B00730825 /* AppDelegate.swift */; };
 		6DE2FCD0279AC62B00730825 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2FCCF279AC62B00730825 /* SceneDelegate.swift */; };
-		6DE2FCD2279AC62B00730825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2FCD1279AC62B00730825 /* ViewController.swift */; };
 		6DE2FCD5279AC62B00730825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE2FCD3279AC62B00730825 /* Main.storyboard */; };
 		6DE2FCD7279AC62C00730825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE2FCD6279AC62C00730825 /* Assets.xcassets */; };
 		6DE2FCDA279AC62C00730825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE2FCD8279AC62C00730825 /* LaunchScreen.storyboard */; };
+		6DE2FCE8279ADAD100730825 /* CardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2FCE7279ADAD100730825 /* CardGameViewController.swift */; };
+		6DE2FCEA279ADB6A00730825 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2FCE9279ADB6A00730825 /* Card.swift */; };
+		6DE2FCEC279ADD3B00730825 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2FCEB279ADD3B00730825 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6DE2FCCA279AC62B00730825 /* GuessСard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuessСard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE2FCCD279AC62B00730825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DE2FCCF279AC62B00730825 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6DE2FCD1279AC62B00730825 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6DE2FCD4279AC62B00730825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DE2FCD6279AC62C00730825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DE2FCD9279AC62C00730825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DE2FCDB279AC62C00730825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DE2FCE7279ADAD100730825 /* CardGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameViewController.swift; sourceTree = "<group>"; };
+		6DE2FCE9279ADB6A00730825 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6DE2FCEB279ADD3B00730825 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		6DE2FCCC279AC62B00730825 /* GuessСard */ = {
 			isa = PBXGroup;
 			children = (
-				6DE2FCCD279AC62B00730825 /* AppDelegate.swift */,
-				6DE2FCCF279AC62B00730825 /* SceneDelegate.swift */,
-				6DE2FCD1279AC62B00730825 /* ViewController.swift */,
-				6DE2FCD3279AC62B00730825 /* Main.storyboard */,
-				6DE2FCD6279AC62C00730825 /* Assets.xcassets */,
-				6DE2FCD8279AC62C00730825 /* LaunchScreen.storyboard */,
-				6DE2FCDB279AC62C00730825 /* Info.plist */,
+				6DE2FCE6279AC8F900730825 /* Services */,
+				6DE2FCE5279AC87300730825 /* Models */,
+				6DE2FCE4279AC85100730825 /* App */,
+				6DE2FCE2279AC83500730825 /* Controllers */,
+				6DE2FCE1279AC7B300730825 /* Views */,
+				6DE2FCE3279AC84700730825 /* Resources */,
 			);
 			path = "GuessСard";
+			sourceTree = "<group>";
+		};
+		6DE2FCE1279AC7B300730825 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2FCD3279AC62B00730825 /* Main.storyboard */,
+				6DE2FCD8279AC62C00730825 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DE2FCE2279AC83500730825 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2FCE7279ADAD100730825 /* CardGameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6DE2FCE3279AC84700730825 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2FCD6279AC62C00730825 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DE2FCE4279AC85100730825 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2FCCD279AC62B00730825 /* AppDelegate.swift */,
+				6DE2FCCF279AC62B00730825 /* SceneDelegate.swift */,
+				6DE2FCDB279AC62C00730825 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6DE2FCE5279AC87300730825 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2FCE9279ADB6A00730825 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DE2FCE6279AC8F900730825 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2FCEB279ADD3B00730825 /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE2FCD2279AC62B00730825 /* ViewController.swift in Sources */,
+				6DE2FCEC279ADD3B00730825 /* DataManager.swift in Sources */,
 				6DE2FCCE279AC62B00730825 /* AppDelegate.swift in Sources */,
+				6DE2FCEA279ADB6A00730825 /* Card.swift in Sources */,
+				6DE2FCE8279ADAD100730825 /* CardGameViewController.swift in Sources */,
 				6DE2FCD0279AC62B00730825 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,10 +347,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KK9GF9S9VR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GuessСard/Info.plist";
+				INFOPLIST_FILE = "GuessСard/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +376,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KK9GF9S9VR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GuessСard/Info.plist";
+				INFOPLIST_FILE = "GuessСard/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
